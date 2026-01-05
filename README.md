@@ -23,3 +23,12 @@ The design was verified using a self-checking testbench.
 * **Result:** Successfully simulated 2:1 Mux behavior.
 
 ![Mux Waveform](url_to_mux_screenshot.png)
+---
+## 🚦 Traffic Light Controller (Finite State Machine)
+**Overview:** Designed a 4-state FSM to control traffic lights with specific timing delays.
+**Key Features:**
+* **Architecture:** Synchronous FSM with separate Sequential (Memory), Next-State, and Output logic blocks.
+* **Timing:** Integrated a 4-bit timer to handle real-time delays (10-clock cycle hold per state).
+* **Safety:** Default "Red-Red" reset state to prevent accidents during power-up.
+
+![FSM Waveform](fsm_simulation.png)
