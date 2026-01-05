@@ -14,3 +14,12 @@ The design was verified using a self-checking testbench.
 * **Reset Check:** When Reset=1, the output holds at 0000.
 
 ![Simulation Waveform](simulation_waveform.png)
+---
+## 🛠 Logic Debugging: 2-to-1 Multiplexer
+**Challenge:** Fixed a broken code snippet containing sensitivity list errors and syntax bugs.
+**Solution:**
+* Converted from sequential logic (`posedge`) to combinational logic (`always @*`).
+* Corrected bit-width mismatch (4-bit output -> 1-bit output).
+* **Result:** Successfully simulated 2:1 Mux behavior.
+
+![Mux Waveform](url_to_mux_screenshot.png)
